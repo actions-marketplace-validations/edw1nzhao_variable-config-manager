@@ -1,0 +1,27 @@
+{
+  "name": "variable-config-manager",
+  "version": "1.0.0",
+  "description": "Get config from an external environment variable repository and from a secret manager to be used in GitHub Actions flow. Envsubst will be used in replacing variables.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezhao7/variable-config-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezhao7/variable-config-manager/issues"
+  },
+  "homepage": "https://github.com/ezhao7/variable-config-manager#readme",
+  "dependencies": {
+    "@actions/core": "1.2.6",
+    "@actions/github": "4.0.0",
+    "fs": "0.0.1-security",
+    "js-yaml": "4.0.0",
+    "shelljs": "0.8.4"
+  }
+}

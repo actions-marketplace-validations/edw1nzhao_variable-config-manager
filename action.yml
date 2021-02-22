@@ -1,0 +1,26 @@
+name: Variable Config Manager
+author: EdwinZhao
+description: |-
+  Get config from an external environment variable repository and from a secret
+  manager to be used in GitHub Actions flow
+inputs:
+  pat:
+    description: |-
+      Personal access token grabbed from user or service account in GitHub that has the correct access.
+    required: true
+  config-repo:
+    description: |-
+      Repository that's going to be used for setting up your environment configuration.
+      Looks like this: `ezhao7/variable-config-manager`
+    required: true
+  env:
+    description: |-
+      Name of the file that you need to use for env config within the repo.
+      Looks like this: `lib/path/dev.yml` or `lib/path/stage.yaml` or `prod.yml`
+    required: true
+outputs:
+  env-values:
+    description: 'Yaml file that is drawn from the repo.'
+runs:
+  using: 'node12'
+  main: 'index.js'
