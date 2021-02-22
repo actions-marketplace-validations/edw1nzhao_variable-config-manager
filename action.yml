@@ -18,6 +18,11 @@ inputs:
       Name of the file that you need to use for env config within the repo.
       Looks like this: `lib/path/dev.yml` or `lib/path/stage.yaml` or `prod.yml`
     required: true
+  google-credentials:
+    description: |-
+      Send
+  google-project:
+    description: |-
 outputs:
   env-values:
     description: 'Yaml file that is drawn from the repo.'
